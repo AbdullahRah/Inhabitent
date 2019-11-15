@@ -1,0 +1,32 @@
+.nav-menu {
+  a {
+    color: #248a83;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.625rem;
+  }
+}
+
+.header-menu {
+  background-color: rgba(white, 0.6);
+}
+
+.site-header {
+  display: flex;
+  position: fixed;
+  width: 90%;
+  z-index: 99;
+}
+.inhabitent-banner {
+  position: relative;
+}
+.inhabitent-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tent-logo {
+  height: 35px;
+}
