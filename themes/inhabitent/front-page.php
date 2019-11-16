@@ -33,8 +33,29 @@ get_header(); ?>
                </div>
             <?php endif; ?>
          </section>
+         
+         <?php
+          $args = array(
+               'post_type' => 'post',
+               'posts_per_page' => 3,
+               'order' => 'ASC');
+          $product_posts = get_posts( $args ); // returns an array of posts
+    ?>
+    <section class="journal-content-section">
+    <?php
+        foreach ( $product_posts as $post ) : setup_postdata( $post );
+        echo "<div class='journal-content'>";
+            the_post_thumbnail('large');
+            ?> <h2> <?php the_title();?></h2><?php
+            comments_number();
+        echo "</div>";
+        
+        endforeach; wp_reset_postdata();  ?>
+    </section>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+   
 <?php get_footer(); ?>

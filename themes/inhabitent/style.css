@@ -43,6 +43,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -433,8 +445,7 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  width: 100%; }
+  display: block; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -667,6 +678,11 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.journal-content-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .nav-menu a {
   color: #248a83;
   text-decoration: none;
@@ -681,8 +697,17 @@ object {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  width: 90%;
-  z-index: 99; }
+  text-shadow: 1px 1px 2px #323232;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0.5rem 0;
+  -webkit-transition: top 0.5s linear;
+  transition: top 0.5s linear;
+  width: 100%;
+  z-index: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .inhabitent-banner {
   position: relative; }
@@ -696,3 +721,15 @@ object {
 
 .tent-logo {
   height: 35px; }
+
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+
+footer {
+  background: url(../../images/dark-wood.png); }
