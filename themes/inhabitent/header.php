@@ -21,7 +21,15 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-			<img class="tent-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg">
+			
+			<?php if ( is_front_page() || is_page('about') ) : ?>
+				<!-- LOGO SHOULD BE GREEEEN -->
+				<img class="tent-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg">
+			<?php else : ?>
+				<img class="tent-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg">
+			<?php endif; ?>
+
+
 <!-- 
 	
 				<div class="site-branding">

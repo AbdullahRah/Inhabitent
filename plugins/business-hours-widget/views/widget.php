@@ -1,6 +1,6 @@
 <!-- This file is used to markup the public-facing widget. -->
 
-<img src="https://tekrabuilders.com/wp-content/uploads/2018/12/male-placeholder-image.jpeg" alt="" srcset=""/>
+
 
 <?php if( strlen(trim($monday_friday) ) > 0 ) : ?>
     <p> 

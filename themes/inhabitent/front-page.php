@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="front-page">
 		<main id="main" class="site-main" role="main">
 		<section class= "tent logo">
 		<!-- <img src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg"> -->
@@ -51,6 +51,8 @@ get_header(); ?>
         echo "</div>";
         
         endforeach; wp_reset_postdata();  ?>
+
+
     </section>
 
 
