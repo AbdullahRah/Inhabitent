@@ -688,9 +688,6 @@ object {
   max-width: 1120px;
   margin: auto; }
 
-.wp-post-image {
-  max-width: 100vw; }
-
 .journal-content {
   width: 30%; }
 
@@ -754,18 +751,25 @@ object {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
+  margin-right: auto; }
 
-.content-area {
+.home .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 /* Shop page */
+.page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  text-align: center; }
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
