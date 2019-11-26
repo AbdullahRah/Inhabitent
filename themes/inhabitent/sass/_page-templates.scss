@@ -34,38 +34,41 @@
 }
 
 /* Journal page */
-.blog {
-  .entry-title {
-    background-color: #248a83;
-    color: #fff;
-    font-size: 33.6px;
-    font-size: 2.1rem;
-    left: 0;
-    padding: 0.75rem 1.5rem;
-    position: absolute;
-    margin-top: 4.25rem;
-    max-width: 75%;
-    top: 0;
-  }
 
-  .entry-meta {
-    background-color: #248a83;
-    bottom: 0;
-    color: #fff;
-    display: inline-block;
-    font-family: Novecento Sans Web, sans-serif;
-    padding: 1.00005rem 1.5rem;
-    position: absolute;
-    right: 0;
-    text-transform: uppercase;
-  }
-  .entry-header {
-    position: relative;
-  }
-  .entry-title a {
-    color: #fff;
-  }
+.entry-title {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  margin-top: 4.25rem;
+  max-width: 75%;
+  top: 0;
+}
 
+.entry-meta {
+  background-color: #248a83;
+  bottom: 7px;
+  color: #fff;
+  display: inline-block;
+  font-family: Novecento Sans Web, sans-serif;
+  padding: 1.00005rem 1.5rem;
+  position: absolute;
+  right: 121px;
+  text-transform: uppercase;
+}
+.entry-header {
+  position: relative;
+}
+.entry-title a {
+  color: #fff;
+}
+
+.blog,
+// .page-template-default,
+.single-post {
   .content-area {
     border-right: 1px solid #e1e1e1;
     padding-right: 5%;
