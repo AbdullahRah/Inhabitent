@@ -5,7 +5,8 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header(); 
+$override='';?>
 	<div id="primary" class="front-page">
 		<main id="main" class="site-main" role="main">
 		<section class= "tent logo">

@@ -2,15 +2,20 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px;
-}
+  width: 73%;
+  // }
 
-.blog,
+  .blog,
 // .page-template-default,
 .single-post {
-  .content-area {
-    border-right: 1px solid #e1e1e1;
-    padding-right: 5%;
-    width: 73%;
+    .content-area {
+      padding-right: 5%;
+      width: 73%;
+    }
   }
+
+  // .page-template-default,
+  // .content-area {
+  //   width: 73%;
+  // }
 }

@@ -5,7 +5,10 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header(); 
+$query=get_terms('taxonomy=product_type'
+)
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -16,9 +19,14 @@ get_header(); ?>
 				<h1 class="page-title">
 					Shop Stuff
 				</h1>
+				<ul>
 				<?php
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+						foreach($query as $x){
+							echo '<li><a href="'.get_term_link($x).'">'.$x->slug.'</a></li>';
+						}
+					?>
+				</ul>
+				
 			</header><!-- .page-header -->
 
 			<div class="product-grid">

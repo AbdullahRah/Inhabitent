@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-
+$override='over-content';
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -46,7 +46,7 @@
 
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content <?=$override?>">
 
 <?php
 if(is_front_page()){

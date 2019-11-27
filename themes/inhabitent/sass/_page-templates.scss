@@ -117,6 +117,7 @@
 .product-info {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .product-title {

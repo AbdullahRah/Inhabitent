@@ -1,3 +1,15 @@
-footer {
+.site-footer {
   background: url(../../images/dark-wood.png);
+}
+
+.footer-block-item {
+  color: white;
+  .contact {
+    color: white;
+  }
+}
+.site-info {
+  .container {
+    color: white;
+  }
 }
