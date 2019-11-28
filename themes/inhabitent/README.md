@@ -1,21 +1,34 @@
-# RED Starter
+# Inhabitent
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress theme made with Red Academy. This is also my first wordpress theme.
 
-## Installation
+## Summary / Purpose
 
-### 1. Download me (don't clone me!)
+The Inhabitent project is my first attempt/run through of making a custom Wordpress theme.
 
-Then add me to your `wp-content` directory.
+<img src="./themes/inhabitent/images/first-girl.png" />
+<img src="./themes/inhabitent/images/shop.png" />
+<img src="./themes/inhabitent/images/journal.png" />
+<img src="./themes/inhabitent/images/footer.png" />
 
-### 2. Rename the `redstarter-master` directory
+## Author: Abdullah Rahman
 
-Make sure that the theme directory name is project appropriate!
+## Notable learnings include:
 
-### 3. Install the dev dependencies
+- The Wordpress template hierarchy
+- Creating custom pages and taxonomies
+- Creating and using field groups
+- Styling a multipage project
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+The development of this website allowed for practice developing a custom wordpress theme. It also gave me a chance to improve my skills in css and php as well as small amounts of jQuery. It also includes a custom widget and plugin. With this project, I was able to understand Custom Post Types and Custom Taxonomies, that help us organize our Wordpress in a more efficient way.
 
-### 4. Update the proxy in `gulpfile.js`
+## Technologies Used
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+- Wordpress
+- PHP
+- HTML and SCSS
+- jQuery
+
+## Acknowldgements:
+
+Acknowledgements to Red Academy instructors Jim and his associates.
