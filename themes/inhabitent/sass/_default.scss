@@ -2,20 +2,24 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 73%;
-  // }
+  max-width: 1120px;
+}
 
-  .blog,
-// .page-template-default,
+.blog,
 .single-post {
-    .content-area {
-      padding-right: 5%;
-      width: 73%;
-    }
+  .content-area {
+    padding-right: 5%;
+    width: 73%;
   }
+}
 
-  // .page-template-default,
-  // .content-area {
-  //   width: 73%;
-  // }
+.home,
+.page-id-62 {
+  .site-content {
+    max-width: 100%;
+  }
+}
+
+.with-sidebar.content-area {
+  width: 75%;
 }

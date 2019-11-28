@@ -19,13 +19,16 @@ $query=get_terms('taxonomy=product_type'
 				<h1 class="page-title">
 					Shop Stuff
 				</h1>
+				<div class="navigation-cat">
 				<ul>
 				<?php
 						foreach($query as $x){
+
 							echo '<li><a href="'.get_term_link($x).'">'.$x->slug.'</a></li>';
 						}
 					?>
 				</ul>
+					</div>
 				
 			</header><!-- .page-header -->
 

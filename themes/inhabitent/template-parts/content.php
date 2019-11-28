@@ -9,11 +9,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); 
+		echo the_field('price');
+		?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -21,8 +24,16 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-content -->
+<?php
+$tmp=get_query_var('product_type' );
+	
+	if ($tmp=='do'||$tmp=='wear' ||$tmp=='eat'||$tmp=='sleep'){
+		
+	}
+	else{
+		echo '<div class="entry-content">';
+		the_excerpt(); 
+   		echo '</div>';
+	}
+	?>
 </article><!-- #post-## -->

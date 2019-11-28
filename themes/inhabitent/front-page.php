@@ -55,7 +55,52 @@ $override='';?>
 
 
     </section>
-
+    <article class="adventures-container page">
+            <div class="title-post">
+                <h2> LATEST ADVENTURES </h2>
+            </div>
+            <div class="wrap-box">
+               <div class="canoe-girl">
+                  <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg' ?>" alt="canoeing">
+                  <div class="naturetext">
+                     <h3 class="title-adventure">
+                           <a href="#"> Getting Back to <br> Nature in a Canoe</a>
+                     </h3>
+                     <a class="white-btn" href="#">Read More</a>
+                  </div>
+               </div>
+               <div class="beach">
+                <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg' ?>" alt="beach">
+                <div class="nighttext">
+                    <h3 class="tit">
+                        <a href="#">A Night with Friends <br> at the Beach</a>
+                    </h3>
+                    <a class="white-btn" href="#">Read More</a>
+                </div>
+                  </div>
+                  <div class="hill">
+                <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg' ?>" alt="hikers">
+                <div class="viewtext">
+                    <h3 class="smalltitle">
+                        <a href="#">Taking in the<br> View at<br> Big Mountain</a>
+                    </h3>
+                    <a class="white-btn" href="#">Read More</a>
+                </div>
+      </div>
+      <div class="night-sky">
+                <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg' ?>" alt="hikers">
+                <div class="startext">
+                    <h3 class="smalltitle">
+                        <a href="#">Star-Gazing at<br> the Night Sky</a>
+                    </h3>
+                    <a class="white-btn" href="#">Read More</a>
+                </div>
+      </div>
+                <div class="more-adv-btn">
+                    <p> MORE ADVENTURES </p>
+                </div>
+            </div>
+        </article>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

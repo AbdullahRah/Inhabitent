@@ -10,13 +10,127 @@
   max-width: 1120px;
   margin: auto;
 }
-// .wp-post-image {
-//   max-width: 100vw;
-// }
 
 .journal-content {
   width: 30%;
 }
+
+.home .product-type-blocks img {
+  height: 70px;
+  width: 70px;
+}
+
+.wrap-box {
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'girl girl beach beach'
+    'girl girl hill sky';
+  grid-gap: 20px;
+}
+
+.canoe-girl {
+  // width: 500px;
+  // height: 500px;
+  grid-area: girl;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .naturetext {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.beach {
+  // width: 500px;
+  // height: 250px;
+  grid-area: beach;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .nighttext {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.hill {
+  grid-area: hill;
+  // height: 100%;
+  // width: 250px;
+  position: relative;
+
+  img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .viewtext {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.night-sky {
+  grid-area: sky;
+  // width: 250px;
+  // height: 250px;
+  position: relative;
+
+  img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .startext {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+// .nighttext {
+//   position: absolute;
+//   right: 18px;
+//   top: 90px;
+// }
+// .naturetext {
+//   position: absolute;
+//   left: 5px;
+// }
+// .viewtext {
+//   position: absolute;
+//   left: 580px;
+//   bottom: 148px;
+// }
+.adventures-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+}
+// .startext {
+//   position: absolute;
+//   right: 22px;
+//   bottom: 175px;
+// }
 
 /* about page */
 .page-about .entry-header {
@@ -35,7 +149,8 @@
 
 /* Journal page */
 
-.entry-title {
+.blog .entry-title,
+.main-posts .entry-title {
   background-color: #248a83;
   color: #fff;
   font-size: 33.6px;
@@ -127,6 +242,12 @@
   margin: 0;
   white-space: nowrap;
 
+  // .navigation-cat ul {
+  //   display: flex;
+
+  //   justify-content: space-around;
+  // }
+
   // &:after {
   //   overflow: visible;
   //   width: 0;
@@ -134,7 +255,22 @@
   //   content: '......................';
   // }
 }
-
+a {
+  text-decoration: none;
+}
+.page-header {
+  .navigation-cat ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    li {
+      text-transform: uppercase;
+      a {
+        color: #248a83;
+      }
+    }
+  }
+}
 .product-price {
   margin: 0;
 }
@@ -155,4 +291,37 @@
 
 .product-item {
   border: 1px solid #e1e1e1;
+}
+// .page {
+//   margin-right: auto;
+//   margin-left: auto;
+//   width: 1120px;
+// }
+
+.contents-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  article {
+    height: inherit;
+    border: 1px solid gray;
+    margin: 0;
+  }
+  .entry-title {
+    font-size: 1rem;
+  }
+  article {
+    .entry-header {
+      width: auto;
+      height: 20vmax;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      a {
+        color: black;
+      }
+    }
+  }
 }

@@ -3,15 +3,34 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+}
+
+.widget-area {
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  border-left: 1px solid #e1e1e1;
+  width: 35%;
+  margin-left: 36px;
+  margin-right: 26px;
+  padding-left: 70px;
 }
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+  display: none;
+}
+
+.widget .day-of-week,
+.textwidget.custom-html-widget {
+  color: #404040;
+}
+.widget-title {
+  margin-top: 100px;
 }

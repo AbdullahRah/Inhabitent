@@ -26,7 +26,10 @@ $override='over-content';
 				<!-- LOGO SHOULD BE GREEEEN -->
 				<img class="tent-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg">
 			<?php else : ?>
+				<a href="<?=home_url( )?>">
 				<img class="tent-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg">
+			</a>
+				
 			<?php endif; ?>
 
 
@@ -42,7 +45,7 @@ $override='over-content';
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 				</nav><!-- #site-navigation -->
-
+				<?php get_search_form(); ?>
 
 			</header><!-- #masthead -->
 
