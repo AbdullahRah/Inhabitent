@@ -49,7 +49,7 @@ $override='over-content';
 
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content <?=$override?>">
+			<div id="site-wrapper" class="site-content <?=$override?>">
 
 <?php
 if(is_front_page()){
