@@ -17,9 +17,9 @@
 							<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 							<p><i class="fa fa-phone"></i><a href="tel:5553434567891">778-456-7891</a></p>
 							<p>
-								<span><i class="fa fa-facebook-square"></i></span>
-								<span><i class="fa fa-twitter-square"></i></span>
-								<span><i class="fa fa-google-plus-square"></i></span>
+								<span><i class="fab fa-facebook-f"></i></span>
+								<span><i class="fab fa-twitter"></i></span>
+								<span><i class="fab fa-pinterest"></i></span>
 							</p>
 						</div>
 					</div>

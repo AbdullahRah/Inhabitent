@@ -13,6 +13,7 @@
 
 .journal-content {
   width: 30%;
+  border: 1px solid #e1e1e1;
 }
 
 .home .product-type-blocks img {
@@ -231,8 +232,12 @@
 
 .product-info {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  h2 {
+    display: block;
+  }
 }
 
 .product-title {

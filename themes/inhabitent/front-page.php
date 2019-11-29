@@ -43,15 +43,20 @@ $override='';?>
           $product_posts = get_posts( $args ); // returns an array of posts
     ?>
     <section class="journal-content-section">
-    <?php
-        foreach ( $product_posts as $post ) : setup_postdata( $post );
-        echo "<div class='journal-content'>";
-            the_post_thumbnail('large');
-            ?> <h2> <?php the_title();?></h2><?php
-            comments_number();
-        echo "</div>";
-        
-        endforeach; wp_reset_postdata();  ?>
+    <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+        <?php echo "<div class='journal-content'>"; ?>
+        <a href="<?php the_permalink(); ?>"> 
+            <?php the_post_thumbnail('large'); 
+            ?>
+            <nav>
+            <h2> <?php the_title();?></h2><?php
+            comments_number(); 
+            comment_date();
+            comment_author();
+            ?> </nav>
+             </a> 
+        <?php echo "</div>"; ?>
+    <?php endforeach; wp_reset_postdata();  ?>
 
 
     </section>
@@ -61,6 +66,7 @@ $override='';?>
             </div>
             <div class="wrap-box">
                <div class="canoe-girl">
+             
                   <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg' ?>" alt="canoeing">
                   <div class="naturetext">
                      <h3 class="title-adventure">
